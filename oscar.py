@@ -1,7 +1,7 @@
 import numpy as np
 from itertools import product
 
-class oscar_recursive:
+class oscar_recursive():
     def __init__(self): self.name = "Oscar's dynamic"
 
     def hsum(self,x,h,table,w):
@@ -22,7 +22,7 @@ class oscar_recursive:
         return res
 
 
-class oscar_non_recursive:
+class oscar_non_recursive():
     def __init__(self): self.name = "Oscar's all chill no stack-overflow TM"
 
     def hsum(self,x,h,table,w):
