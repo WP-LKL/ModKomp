@@ -19,7 +19,8 @@ E = DummyEngine(models=[
     rasmus_simple(),
     rasmus_brute(),
     rasmus_numba(),
-    oscar_dynamic()
+    oscar_recursive(),
+    oscar_non_recursive()
     ])
 # We print all valid models
 E.is_valid()
