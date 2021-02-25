@@ -1,6 +1,6 @@
 from nikolajs_dummy import NikolajsDummyCalculator
 from rasmus import rasmus_simple, rasmus_brute, rasmus_numba
-from oscar import oscar_dynamic
+from oscar import oscar_recursive, oscar_non_recursive
 
 
 class DummyEngine():
@@ -19,7 +19,8 @@ E = DummyEngine(models=[
     rasmus_simple(),
     rasmus_brute(),
     rasmus_numba(),
-    oscar_dynamic()
+    oscar_recursive(),
+    oscar_non_recursive()
     ])
 # We print all valid models
 E.is_valid()
